@@ -1,0 +1,70 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* vh is viewport height */
+  margin: 0;
+  background: url("../images/background.png");
+  background-position: center;
+  position: relative;
+}
+main {
+  flex: 1; /* This allows the main content to expand and fill the available space */
+}
+footer {
+  flex-shrink: 0; /* Ensures the footer doesn't shrink */
+  /* Add any other footer styling you need here */
+}
+
+.container .row .col-lg-3 #glass-card{
+  backdrop-filter: blur(1px) saturate(180%);
+    -webkit-backdrop-filter: blur(1px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 50px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.overlay{
+  position:absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+footer{
+  position: relative;
+  z-index: 1000;
+  backdrop-filter: blur(0px) saturate(180%);
+  -webkit-backdrop-filter: blur(0px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+table{
+  border: none;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+  backdrop-filter: blur(0px) saturate(180%);
+  -webkit-backdrop-filter: blur(0px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+
+}
+
+.totalCostContainer{
+  position: relative;
+  z-index: 1000;
+  backdrop-filter: blur(0px) saturate(180%);
+  -webkit-backdrop-filter: blur(0px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
